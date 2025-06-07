@@ -24,6 +24,7 @@ public class ClientServiceApplication {
 			clientRepository.save(new Client(null, "Ali", "ali.ms@gmail.com"));
 			clientRepository.save(new Client(null, "Oussema", "oussema.ms@gmail.com"));
 			clientRepository.save(new Client(null, "Mohamed", "Mohamed.ms@gmail.com"));
+			clientRepository.save(new Client(null, "Alex", "Alex.ms@gmail.com"));
 			// Afficher les clients existants dans la BD
 			for (Client client : clientRepository.findAll()) {
 				System.out.println(client.toString());
