@@ -22,6 +22,10 @@ public class ClientRestController {
 		return clientRepository.findById(id).get();
 	}
 
+	@PostMapping(path = "/clients")
+	public Client save(@RequestBody Client client) {
+		return clientRepository.save(client);
+	}
 
 	@PutMapping(path = "/clients/{id}")
 	public Client update(@PathVariable Long id, @RequestBody Client client) {
