@@ -22,9 +22,7 @@ public class ClientServiceApplication {
 		return args -> {
 			// Insérer trois clients de test dans la BD
 			clientRepository.save(new Client(null, "Ali", "ali.ms@gmail.com"));
-			clientRepository.save(new Client(null, "Oussema", "oussema.ms@gmail.com"));
-			clientRepository.save(new Client(null, "Mohamed", "Mohamed.ms@gmail.com"));
-			clientRepository.save(new Client(null, "Alex", "alex.ms@gmail.com"));
+			clientRepository.save(new Client(null, "Ahmed", "ahmed.ms@gmail.com"));
 			// Afficher les clients existants dans la BD
 			for (Client client : clientRepository.findAll()) {
 				System.out.println(client.toString());
